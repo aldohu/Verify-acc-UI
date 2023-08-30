@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.container {
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 20px;
+	text-align: center;
+}
+.form input.number {
+	height: 90px;
+	margin: 15px;
+	width: 80px;
+	border-radius: 5px;
+	border: 1px solid black;
+	outline: none; /* Remove the default outline */
+	transition: box-shadow 0.3s; /* Add smooth transition */
+}
+
+/* Apply border styles using box-shadow when the input field is in focus */
+.form input.number:focus {
+	border: none;
+	box-shadow: 0 0 0 2px red; /* Create a red shadow effect */
+}
+.number {
+	font-size: 48px;
+	text-align: center;
+}
